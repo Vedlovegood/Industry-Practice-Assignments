@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value.trim();
+            let email = document.getElementById("email").value.trim();
+            let feedback = document.getElementById("feedback").value.trim();
+            let rating = document.querySelector('input[name="rating"]:checked');
+
+            if (name === "") {
+                alert("Please enter your name.");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Please enter your email.");
+                return false;
+            }
+
+            if (!rating) {
+                alert("Please select a rating.");
+                return false;
+            }
+
+            if (feedback === "") {
+                alert("Please enter your feedback.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</head>
+<body>
+
+    <h2>Feedback Form Qudditch</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label>Rating (1–5):</label><br>
+        <input type="radio" name="rating" value="1"> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+        <br><br>
+
+        <label>Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Timetable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2 class="title">Weekly Timetable</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>9-10</th>
+                <th>10-11</th>
+                <th>11-12</th>
+                <th>Lunch Break</th>
+                <th>1-2</th>
+                <th>2-3</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td class="subject">Java</td>
+                <td class="subject">C++</td>
+                <td class="subject">C#</td>
+                <td rowspan="6" class="break">LUNCH<br>BREAK</td>
+                <td class="subject">DBMS</td>
+                <td class="subject">OS</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" class="subject">Hands on learning</td>
+                <td class="subject">Game Dev</td>
+                <td colspan="2" class="subject">Project Work</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td class="subject">DBMS</td>
+                <td class="subject">Machine learning</td>
+                <td class="subject">Python</td>
+                <td class="subject">Kotlin</td>
+                <td class="subject">Mern Stack</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="3" class="subject">Practical Thinking</td>
+                <td class="subject">Full stack</td>
+                <td class="subject">Devops</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td class="subject">Cloud computing</td>
+                <td class="subject">Robotics</td>
+                <td class="subject">Physics</td>
+                <td colspan="2" class="subject">Editing</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td class="subject">Maths</td>
+                <td class="subject">Japanese</td>
+                <td class="subject">Physics</td>
+                <td class="subject">Biology</td>
+                <td class="subject"></td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
